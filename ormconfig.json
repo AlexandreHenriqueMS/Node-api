@@ -5,6 +5,7 @@
   "username": "root",
   "password": "",
   "database": "teste",
+  "synchronize": true,
   "entities": [
      "src/model/*.ts"
   ],
@@ -12,6 +13,7 @@
      "src/migration/*.ts"
   ],
   "cli": {
-   "migrationsDir": "src/migration"
+   "migrationsDir": "src/migration",
+   "entitiesDir": "src/model"
 }
 }

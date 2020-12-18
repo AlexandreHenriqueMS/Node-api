@@ -19,7 +19,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@controllers/*": ["./src/controllers/*"],
+      "@controller/*": ["./src/controller/*"],
       "@model/*": ["./src/model/*"],
       "@views/*": ["./src/views/*"],
       "@config/*": ["./src/config/*"]

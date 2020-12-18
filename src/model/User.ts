@@ -1,18 +1,21 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, Index, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity('users')
 export default class User {
 
-  @PrimaryGeneratedColumn('increment')
+  @PrimaryGeneratedColumn('rowid')
   id: Number;
 
   @Column()
+  @Index()
   email: String;
 
   @Column()
+  @Index()
   password: String;
 
   @Column()
+  @Index()
   userName: String;
 }
 
